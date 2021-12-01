@@ -1,0 +1,32 @@
+delete 0xa
+replace 0xa1 0 0 5
+10000
+	add 0xa1 0 0 5
+48879
+get 0xa1
+prepend 0xa 0 0 6
+342391
+flush_all
+delete 0xa1
+set 0xa1 0 0 3
+100
+	set 0xa1 0 0 5
+48879
+append 0xa1 0 0 6
+342391
+incr 0xa1 100
+decr 0xe4 50
+get 0xa1
+replace 0xa10 0 0 5
+10000
+	set 0xa1 0 0 9
+483575885
+stats
+add 0xa2 0 0 5
+48879
+prepend 0xa1 0 0 6
+342391
+incr 0xe4 100
+decr 0xa1 500
+get 0xa
+	

@@ -1,0 +1,24 @@
+get 0xa1
+append 0xa1 0 0 10
+1832943762
+set 0xa1 0 0 10
+1440315012
+	incr 0xa2 1039905417
+decr 0xa1 1443608747
+incr 0xe4 798878127
+decr 0xa 1017211358
+decr 0xa 84388308
+incr 0xa1 1390290207
+prepend 0x0 0 0 9
+215410149
+	delete 0xa1
+decr 0xa10 548523397
+incr 0xa1 1892651770
+set 0xa1 0 0 9
+253381170
+flush_all
+decr 0xa1 1230583755
+	delete 0xa1
+flush_all
+incr 0xa1 1478702108
+	

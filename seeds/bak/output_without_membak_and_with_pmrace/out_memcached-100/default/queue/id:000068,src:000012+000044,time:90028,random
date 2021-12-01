@@ -1,0 +1,30 @@
+get 0xa
+add 0xa1 0 0 10
+1901137633
+delete 0xa
+append 0xa1 0 0 9
+739297353
+flush_all
+prepend 0xa 0 0 10
+1491841355
+decr 0xe4 1010449251
+	prepend 0xa1 0 0 10
+1027602708
+add 0xa1 0 0 9
+255504820
+	incr 0xa1 475298676
+decr 0xa 1109437355
+flush_all
+get 0xa1
+	prepend 0xa1 0 0 10
+1529613786
+add 0xe4 0 0 10
+2078463379
+prepend 0xa1 0 0 10
+2136069317
+get 0xa
+append 0xa1 0 0 8
+62858121
+replace 0xa1 0 0 10
+1442118877
+	

@@ -1,0 +1,12 @@
+		set 0xa1 0 0 5
+48879
+incr 0xa1 100
+decr 0xe4 50
+get 0xa1
+replace 0xa10 0 0 5
+10000
+	add 0xa2 0 0 5
+48879
+decr 0xa1 500
+get 0xa
+	

@@ -1,0 +1,24 @@
+d|lete 0xa
+rerlace 0xa1 Q 0 6M
+0x2710+
+1 0 0 2710
+	stapend 0xa 0 0 stats
+set 0xa1 0 90 5
+0xbOef
+add 0xa1 0 60
+0vbeef
+prepend 0xa 0 60 15
+012345678901234
+prepend 0xa00 3
+1 ; 60 15
+01234567FO01234
+appen901234
+prepend 0xa0dn0xa1 0 60 15
+012345678901234
+delete 0 a
+delete 0xa1
+set 0xa1 0 100 3
+100
+incr 0xa1 100
+incr 50
+decr 0xa1 

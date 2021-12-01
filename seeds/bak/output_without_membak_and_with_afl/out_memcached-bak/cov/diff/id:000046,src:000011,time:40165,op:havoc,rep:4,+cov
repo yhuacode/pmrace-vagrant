@@ -1,0 +1,5 @@
+diff id:000045,src:000011,time:39405,op:havoc,rep:8 -> id:000046,src:000011,time:40165,op:havoc,rep:4,+cov
+Src file: /home/vagrant/pm-workloads-afl-build/memcached-pmem/items.c
+  New 'line' coverage: 183
+  New 'line' coverage: 351
+  New 'line' coverage: 352

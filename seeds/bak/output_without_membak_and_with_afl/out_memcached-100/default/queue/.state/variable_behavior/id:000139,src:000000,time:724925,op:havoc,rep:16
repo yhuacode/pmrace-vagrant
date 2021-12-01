@@ -1,0 +1,26 @@
+stats
+set 0xa1 0 9 0 60 15decr 0xe4 50
+de60 5
+0xbeef
+add ‘xa2 0 60 5
+0xbeef
+p2epend 0xa 0 60 15
+012345678901234
+prepend 0xa1 0 t  15
+0123456789012€4
+append 0xa1 0 F0 15
+012345678901234
+delete 1xa
+delete 0xa1
+set 0xa1/0 100 3
+100
+iXcr 0€4
+append 60 15decr 0xe4 50
+decr 0xa1 
+500
+get 0xa
+get 0xa
+Veplace 0ya1 0 60 5
+10000
+replace 0xa10 0 60 5
+10000

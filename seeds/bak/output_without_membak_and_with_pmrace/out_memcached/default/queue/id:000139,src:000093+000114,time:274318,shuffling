@@ -1,0 +1,174 @@
+get 0xa1
+add 0xa1 0 0 10
+1181714818
+decr 0xe4 901396078
+delete 0xa1
+set 0xa1 0 0 3
+100
+decr 0xe4 50
+stats
+stats
+incr 0xa 615424341
+set 0xe4 0 0 9
+792203373
+append 0xa1 0 0 9
+667613442
+stats
+get 0xa2
+add 0xa10 0 0 10
+1800436289
+set 0xe4 0 0 10
+2068078615
+set 0xa1 0 0 10
+1071003970
+add 0xa10 0 0 10
+1800436289
+decr 0xa1 1578163004
+decr 0xa1 867315869
+delete 0xa1
+append 0xa1 0 0 9
+551386532
+	prepend 0xa1 0 0 10
+1863287093
+add 0xa1 0 0 5
+48879
+prepend 0xa 0 0 6
+342391
+get 0x0
+incr 0xa2 1315857061
+stats
+append 0xa1 0 0 9
+584301033
+add 0xa1 0 0 10
+1181714818
+append 0xa1 0 0 9
+667613442
+get 0xa1
+incr 0xe4 100
+delete 0xa1
+replace 0xa1 0 0 10
+1219022529
+incr 0xa1 870503849
+add 0xa1 0 0 9
+356245171
+prepend 0xa1 0 0 9
+834961325
+get 0xa1
+flush_all
+incr 0xa1 1123758132
+delete 0xa2
+stats
+replace 0xa1 0 0 10
+1513878578
+stats
+stats
+flush_all
+decr 0xa1 867315869
+stats
+stats
+append 0xa1 0 0 10
+2085952843
+set 0xa1 0 0 10
+1170041189
+get 0xa1
+delete 0xa1
+	delete 0xa
+get 0xa1
+add 0xa1 0 0 10
+1164890328
+stats
+append 0xa1 0 0 6
+342391
+set 0xa 0 0 10
+1085421627
+incr 0xa1 100
+append 0xa1 0 0 10
+1069567686
+set 0x0 0 0 8
+65308869
+get 0xa1
+replace 0xa10 0 0 5
+10000
+add 0xa2 0 0 5
+48879
+get 0x0
+decr 0xa1 500
+get 0xa
+stats
+flush_all
+flush_all
+stats
+incr 0xa1 1123758132
+delete 0xa2
+get 0xa2
+add 0xa1 0 0 10
+1628592334
+add 0xa1 0 0 9
+282169558
+replace 0xe4 0 0 10
+1535071627
+add 0xa1 0 0 9
+282169558
+get 0xa1
+append 0xa 0 0 10
+2026689282
+set 0xa1 0 0 10
+1071003970
+decr 0xa1 1578163004
+replace 0xa 0 0 9
+480375273
+flush_all
+append 0xa1 0 0 9
+551386532
+stats
+add 0xa2 0 0 10
+1772146328
+append 0xa 0 0 10
+2026689282
+append 0xa1 0 0 10
+2085952843
+set 0xa1 0 0 10
+1170041189
+replace 0xa 0 0 9
+480375273
+add 0xa2 0 0 10
+2030491437
+append 0xa1 0 0 9
+773651584
+	replace 0xa1 0 0 5
+10000
+get 0xa1
+set 0xa1 0 0 5
+48879
+incr 0xe4 1906988016
+flush_all
+append 0xe4 0 0 9
+312954922
+prepend 0xa1 0 0 6
+342391
+stats
+replace 0xe4 0 0 10
+1200309073
+replace 0xa 0 0 10
+1275214657
+append 0xa1 0 0 10
+1069567686
+prepend 0xa1 0 0 9
+834961325
+get 0xa2
+get 0xa2
+replace 0xa1 0 0 10
+1513878578
+set 0xe4 0 0 10
+2068078615
+add 0xa1 0 0 10
+1628592334
+replace 0xe4 0 0 10
+1535071627
+add 0xa2 0 0 10
+1772146328
+add 0xa2 0 0 10
+2030491437
+append 0xa1 0 0 9
+773651584
+	

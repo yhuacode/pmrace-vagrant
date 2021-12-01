@@ -1,0 +1,7 @@
+replace 0xa1 0 0 5
+10000
+	prepend 0xa 0 0 6
+342391
+delete 0xa1
+		get 0xa
+	

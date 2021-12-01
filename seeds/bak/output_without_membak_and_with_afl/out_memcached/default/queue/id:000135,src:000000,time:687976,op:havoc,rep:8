@@ -1,0 +1,23 @@
+statsûset 0xa1 0 900 5
+0xbeef
+add ?xa1 0 60 5
+0xbeef
+add 0xa2 0:60 5
+0xbeef
+prepend 0xa 0 60 15
+0123456789012V4
+prepend 0xa1 0 60 15
+012345678901234
+append 0xa1 0 60 15
+012345678901234
+delete 0xa
+dele—e 0xa1
+set 0xa1 0 100 3
+100
+incr 0xa1 100
+incr 0xe4 100
+decr 0xe4 50
+decr 0xa1 500
+g
+seplace 0xa10 0 60 5
+10000

@@ -1,0 +1,380 @@
+delete 0xa
+append 0xa1 0 0 10
+1724464319
+replace 0xa1 0 0 5
+10000
+delete 0xa
+stats
+stats
+delete 0xa2
+delete 0xa1
+delete 0xa
+prepend 0xa1 0 0 10
+2061011312
+set 0xa1 0 0 8
+80366107
+replace 0xa1 0 0 5
+10000
+replace 0xa1 0 0 5
+10000
+flush_all
+delete 0xa
+flush_all
+delete 0xa
+flush_all
+replace 0xa1 0 0 5
+10000
+prepend 0xa1 0 0 10
+1863287093
+set 0xa 0 0 10
+1085421627
+set 0x0 0 0 8
+65308869
+set 0xa 0 0 10
+1085421627
+set 0x0 0 0 8
+65308869
+stats
+flush_all
+replace 0xa 0 0 10
+1275214657
+flush_all
+replace 0xa 0 0 10
+1275214657
+flush_all
+flush_all
+replace 0xe4 0 0 10
+1535071627
+flush_all
+decr 0xa1 867315869
+replace 0xa 0 0 9
+480375273
+flush_all
+replace 0xa 0 0 9
+480375273
+	incr 0xa1 203471409
+add 0x0 0 0 9
+603598188
+get 0xa1
+get 0xa1
+append 0x0 0 0 10
+1473139326
+add 0xa1 0 0 5
+48879
+get 0xa1
+prepend 0xa 0 0 6
+342391
+decr 0xa1 93534195
+stats
+add 0xa1 0 0 5
+48879
+stats
+delete 0xa1
+set 0xa1 0 0 3
+100
+incr 0xa1 1538077774
+delete 0xa1
+append 0xa1 0 0 8
+53366591
+set 0xa1 0 0 3
+100
+get 0xa1
+delete 0xa1
+incr 0xa1 1084518918
+prepend 0xa 0 0 6
+342391
+add 0xa1 0 0 10
+2045801351
+set 0xa1 0 0 3
+100
+get 0xa1
+prepend 0xa1 0 0 6
+342391
+prepend 0xa 0 0 6
+342391
+delete 0xa1
+delete 0xa1
+add 0xa1 0 0 5
+48879
+set 0xa1 0 0 3
+100
+get 0xa1
+prepend 0xa 0 0 6
+342391
+delete 0xa1
+add 0xa1 0 0 5
+48879
+set 0xa1 0 0 3
+100
+get 0xa1
+delete 0xa1
+set 0xa1 0 0 3
+100
+incr 0xa2 1315857061
+incr 0xa 615424341
+append 0xe4 0 0 9
+312954922
+stats
+append 0xa1 0 0 9
+667613442
+delete 0xa1
+stats
+incr 0xa1 870503849
+delete 0xa1
+stats
+get 0xa2
+replace 0xa1 0 0 10
+1513878578
+delete 0xa2
+get 0xa2
+replace 0xa1 0 0 10
+1513878578
+get 0xa2
+add 0xa1 0 0 9
+282169558
+replace 0xa1 0 0 10
+1513878578
+set 0xa1 0 0 10
+1071003970
+add 0xa1 0 0 9
+282169558
+set 0xa1 0 0 10
+1071003970
+add 0xa2 0 0 10
+1772146328
+add 0xa2 0 0 10
+1772146328
+set 0xa1 0 0 10
+1071003970
+set 0xa1 0 0 10
+1071003970
+append 0xa1 0 0 9
+551386532
+stats
+add 0xa2 0 0 10
+1772146328
+append 0xa1 0 0 9
+551386532
+add 0xa2 0 0 10
+1772146328
+append 0xa1 0 0 9
+551386532
+	stats
+prepend 0xa1 0 0 9
+194246336
+decr 0xa 987995618
+decr 0xa1 2143683162
+add 0xa10 0 0 10
+1935697329
+set 0xa1 0 0 5
+48879
+decr 0xa 987995618
+append 0xa1 0 0 6
+342391
+append 0xa1 0 0 6
+342391
+decr 0xe4 50
+incr 0xa1 100
+replace 0xa10 0 0 5
+10000
+incr 0xa1 100
+replace 0xa1 0 0 9
+247796934
+get 0xa1
+flush_all
+flush_all
+flush_all
+replace 0xa1 0 0 9
+247796934
+set 0xa1 0 0 5
+48879
+append 0xa1 0 0 6
+342391
+decr 0xe4 901396078
+flush_all
+set 0xa1 0 0 5
+48879
+append 0xa1 0 0 6
+342391
+delete 0x0
+decr 0xe4 50
+set 0xa1 0 0 5
+48879
+replace 0xa10 0 0 5
+10000
+add 0xa1 0 0 10
+1164890328
+delete 0x0
+decr 0xe4 50
+set 0xa1 0 0 5
+48879
+replace 0xa10 0 0 5
+10000
+add 0xa1 0 0 10
+1164890328
+incr 0xa1 100
+decr 0xe4 50
+get 0xa1
+set 0xa1 0 0 5
+48879
+incr 0xa1 100
+incr 0xa1 100
+incr 0xe4 1906988016
+replace 0xa10 0 0 5
+10000
+stats
+replace 0xa10 0 0 5
+10000
+replace 0xa10 0 0 5
+10000
+get 0xa1
+replace 0xe4 0 0 10
+1200309073
+replace 0xe4 0 0 10
+1200309073
+replace 0xa1 0 0 10
+1219022529
+get 0xa1
+incr 0xa1 1123758132
+get 0xa2
+get 0xa1
+stats
+incr 0xa1 1123758132
+incr 0xa1 1123758132
+set 0xe4 0 0 10
+2068078615
+get 0xa2
+stats
+set 0xe4 0 0 10
+2068078615
+add 0xa1 0 0 10
+1628592334
+stats
+set 0xe4 0 0 10
+2068078615
+stats
+decr 0xa1 1578163004
+get 0xa1
+stats
+append 0xa1 0 0 10
+2085952843
+set 0xa1 0 0 10
+1170041189
+append 0xa1 0 0 10
+2085952843
+decr 0xa1 1578163004
+append 0xa1 0 0 9
+773651584
+delete 0xa1
+add 0xa2 0 0 10
+2030491437
+append 0xa1 0 0 10
+2085952843
+append 0xa1 0 0 10
+2085952843
+set 0xa1 0 0 10
+1170041189
+add 0xa2 0 0 10
+2030491437
+	set 0xa1 0 0 8
+71625073
+add 0xa1 0 0 9
+853708205
+prepend 0xa1 0 0 10
+1024989045
+prepend 0xa 0 0 9
+918142954
+delete 0xa10
+prepend 0xa1 0 0 10
+1686276119
+stats
+stats
+incr 0xe4 1756803970
+append 0xa1 0 0 9
+349615709
+append 0xa1 0 0 9
+349615709
+stats
+add 0xa2 0 0 5
+48879
+prepend 0xa1 0 0 6
+342391
+stats
+incr 0xe4 100
+add 0xa2 0 0 5
+48879
+prepend 0xa1 0 0 6
+342391
+decr 0xa1 500
+incr 0xa1 2128366611
+get 0xa
+stats
+incr 0xe4 100
+decr 0xa1 500
+get 0xa
+set 0xa1 0 0 8
+11468714
+add 0xa1 0 0 10
+1181714818
+stats
+add 0xa2 0 0 5
+48879
+prepend 0xa1 0 0 6
+342391
+add 0xa2 0 0 5
+48879
+get 0xa
+get 0x0
+prepend 0xa1 0 0 6
+342391
+stats
+incr 0xe4 100
+decr 0xa1 500
+add 0xa 0 0 5
+48879
+get 0xa
+stats
+add 0xa 0 0 5
+48879
+incr 0xa1 100
+decr 0xa1 500
+stats
+append 0xa1 0 0 9
+584301033
+add 0xa2 0 0 5
+48879
+append 0xa1 0 0 9
+584301033
+get 0x0
+prepend 0xa1 0 0 6
+342391
+decr 0xa1 500
+get 0xa
+set 0xe4 0 0 9
+792203373
+incr 0xe4 100
+decr 0xa1 500
+get 0xa
+prepend 0xa1 0 0 9
+834961325
+append 0xa1 0 0 10
+1069567686
+stats
+add 0xa1 0 0 9
+356245171
+prepend 0xa1 0 0 9
+834961325
+prepend 0xa1 0 0 9
+834961325
+stats
+append 0xa1 0 0 10
+1069567686
+add 0xa10 0 0 10
+1800436289
+add 0xa10 0 0 10
+1800436289
+append 0xa 0 0 10
+2026689282
+append 0xa 0 0 10
+2026689282
+	

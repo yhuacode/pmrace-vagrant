@@ -1,0 +1,13 @@
+delete 0xa
+	prepend 0xa 0 0 6
+342391
+delete 0xa1
+	incr 0xa1 100
+get 0xa1
+	stats
+add 0xa2 0 0 5
+48879
+prepend 0xa1 0 0 6
+342391
+get 0xa
+	

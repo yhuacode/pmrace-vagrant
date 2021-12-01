@@ -1,0 +1,26 @@
+append 0xa1 0 0 10
+1724464319
+stats
+delete 0xa2
+delete 0xa1
+stats
+prepend 0xa1 0 0 10
+2061011312
+set 0xa1 0 0 8
+80366107
+	incr 0xa1 203471409
+get 0xa1
+prepend 0xa1 0 0 10
+1422157827
+stats
+stats
+	stats
+stats
+	prepend 0xa 0 0 9
+918142954
+delete 0xa10
+stats
+set 0xa 0 0 10
+1730164213
+stats
+	

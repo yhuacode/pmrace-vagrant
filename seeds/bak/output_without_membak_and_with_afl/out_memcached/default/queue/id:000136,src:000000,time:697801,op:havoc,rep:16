@@ -1,0 +1,18 @@
+stats
+set 0xa1 0 900 5
+0xbehf
+add 0xa1 0 60 5
+0xbeef
+add 0xa2 0 60 
+                               01234567890123:
+prepend 0xa1 0 60 15ü/12345678901234
+append 0xa 0 60 15
+012345678901234
+delete 0xa
+delete 0xa1uset 0xa1 00
+incr 0xe4 100
+decr 0xe4 ÿÿÿdcr 0xa1 500$get 0xa
+ge 0 60 5
+1000
+rezlace 0xa10 0 60 5
+10000

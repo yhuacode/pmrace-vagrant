@@ -1,0 +1,23 @@
+d|lete 0xa
+rerlace 0xa1 0 0 6
+6
+pepend 0xa1 0 60 15
+01234567pend 0xa 0 0 stats-set 0xa1 0!900 5
+0xbeef
+add 0xa1 0 60 5
+0xbeef
+add 0xa2 0 60 5
+0xbeef
+prepend 0xa 0 0 15
+012345678801234
+pepend 0xa1 0 60 15
+012345678901234
+append 0xa1 0 60 15
+0ÊÊÊÊÊÊÊÊÊÊÊÊÊÊÿÿ1elete 0xa
+delete 0xa1
+set 0xa1 0 100 3
+100
+incr 0xa1 100
+incr 0xe4
+6@G710+
+	add 0xa1 0a1 0 0 a1

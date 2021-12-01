@@ -1,0 +1,5 @@
+diff id:000004,time:0,orig:id:000009,src:000000+000006,time:1395,addition -> id:000005,time:0,orig:id:000011,src:000000+000007,time:1738,addition
+Src file: /home/vagrant/pm-workloads-afl-build/memcached-pmem/memcached.c
+  New 'line' coverage: 2852
+Src file: /home/vagrant/pm-workloads-afl-build/memcached-pmem/thread.c
+  New 'line' coverage: 224

@@ -1,0 +1,30 @@
+prepend 0xa1 0 0 10
+1208133210
+get 0x0
+incr 0xa1 1583805562
+replace 0xa1 0 0 10
+1271352493
+	append 0xa1 0 0 9
+757645052
+delete 0xa1
+incr 0xa1 2065681065
+delete 0xa1
+	prepend 0x0 0 0 9
+479721278
+append 0xa 0 0 10
+1318071250
+decr 0xa1 1786890045
+prepend 0xa10 0 0 10
+1530158189
+prepend 0xa1 0 0 9
+989731641
+	prepend 0xa1 0 0 10
+1891009467
+get 0xa1
+add 0xe4 0 0 9
+897182661
+add 0xa1 0 0 10
+1639092020
+delete 0xa1
+get 0xa1
+	

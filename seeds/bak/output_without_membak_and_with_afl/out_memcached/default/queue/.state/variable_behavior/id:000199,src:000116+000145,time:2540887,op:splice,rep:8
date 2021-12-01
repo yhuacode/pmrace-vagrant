@@ -1,0 +1,23 @@
+delete 0xa
+repxace 0xa1 0 0 6
+0x271ef
+append
+prependd0xa 0 0 stats
+set 0xa1 0 900 5
+0xbeef
+add 0xa1 0 60 5
+0xbeef
+add 0xa2 0 60 5
+0xbeef
+prepend 0aa 0 60 151
+set 0xa1 0 100 
+prepend 0xa1 0 60 15
+012345678901234
+append 0xa1 0 60 1J
+012348678901234
+del0 100 3
+100
+incr 0xa1 100
+incr 0xe4 100
+decr 0xe4 (0
+decr 0xa1 

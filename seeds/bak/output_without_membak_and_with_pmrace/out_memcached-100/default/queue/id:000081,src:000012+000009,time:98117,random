@@ -1,0 +1,28 @@
+flush_all
+set 0xa2 0 0 9
+478983327
+stats
+replace 0xa1 0 0 10
+1168498404
+	add 0x0 0 0 10
+1500093388
+get 0xa1
+delete 0xa10
+decr 0xa1 421527225
+stats
+add 0xa1 0 0 10
+1890134207
+	prepend 0xa1 0 0 9
+721027378
+delete 0xa1
+add 0xe4 0 0 10
+2001130819
+get 0xa1
+incr 0xa1 1836533099
+	flush_all
+prepend 0xa1 0 0 9
+377700932
+get 0xa1
+add 0xe4 0 0 8
+55286458
+	

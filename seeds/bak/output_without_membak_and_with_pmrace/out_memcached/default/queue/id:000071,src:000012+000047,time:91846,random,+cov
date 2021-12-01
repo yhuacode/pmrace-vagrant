@@ -1,0 +1,31 @@
+stats
+set 0xa2 0 0 10
+2060565543
+stats
+	add 0x0 0 0 9
+603598188
+get 0xa1
+append 0x0 0 0 10
+1473139326
+prepend 0xa1 0 0 8
+53000406
+stats
+append 0xa1 0 0 9
+464296940
+decr 0xa1 93534195
+	decr 0xe4 887354151
+stats
+set 0xa1 0 0 10
+1303419746
+decr 0xe4 767748311
+prepend 0xa1 0 0 9
+194246336
+	set 0xa1 0 0 8
+71625073
+add 0xa1 0 0 9
+853708205
+prepend 0xa1 0 0 10
+1024989045
+prepend 0xa1 0 0 10
+1686276119
+	

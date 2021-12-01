@@ -1,0 +1,25 @@
+replace 0xa 0 0 9
+808967228
+incr 0xa 495959936
+stats
+flush_all
+replace 0xa10 0 0 9
+965890926
+stats
+flush_all
+	stats
+stats
+append 0xa 0 0 9
+979014646
+stats
+	incr 0xa 1933220397
+replace 0xa10 0 0 10
+1904414093
+	append 0xa 0 0 10
+1685590182
+stats
+delete 0xa2
+stats
+incr 0xa1 1593535593
+incr 0xa1 1022489668
+	

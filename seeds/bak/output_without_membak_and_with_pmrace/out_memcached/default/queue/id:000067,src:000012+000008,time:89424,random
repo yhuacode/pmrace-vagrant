@@ -1,0 +1,30 @@
+set 0xa10 0 0 10
+1079469520
+decr 0xe4 1392539216
+append 0xa10 0 0 7
+4679614
+set 0xa1 0 0 10
+1366148235
+replace 0xe4 0 0 9
+590319760
+	flush_all
+decr 0xe4 216613019
+set 0xe4 0 0 9
+558950779
+get 0xa1
+	delete 0xa
+delete 0xa1
+prepend 0xa1 0 0 9
+376106325
+incr 0xa1 411957421
+prepend 0xa1 0 0 8
+80557854
+replace 0xa10 0 0 9
+196108608
+append 0xa1 0 0 9
+877275776
+	append 0xa1 0 0 10
+1786355644
+decr 0xa 780744356
+incr 0xa 1271111315
+	

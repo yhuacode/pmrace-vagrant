@@ -1,0 +1,166 @@
+stats
+flush_all
+prepend 0x0 0 0 10
+1145242015
+set 0xe4 0 0 9
+806063196
+flush_all
+stats
+get 0xa10
+replace 0x0 0 0 10
+1554820650
+append 0xa1 0 0 9
+829010280
+flush_all
+set 0xa1 0 0 8
+31427706
+flush_all
+flush_all
+incr 0xa1 697825400
+incr 0xa 530866300
+incr 0xa1 1279215058
+set 0x0 0 0 10
+1891653053
+decr 0xa1 715598816
+add 0xa2 0 0 10
+1880404876
+prepend 0xa1 0 0 9
+439141670
+set 0xa1 0 0 10
+1214196094
+stats
+flush_all
+flush_all
+delete 0x0
+add 0xa1 0 0 10
+1208784798
+delete 0xa
+	append 0xa1 0 0 9
+839492965
+incr 0xa1 1668633344
+replace 0xa1 0 0 10
+2021797024
+replace 0xa10 0 0 9
+132531833
+delete 0xa1
+add 0xa1 0 0 10
+1958493065
+delete 0xa
+set 0xa1 0 0 10
+1227109071
+delete 0xa1
+append 0xa10 0 0 9
+339777869
+add 0xa2 0 0 10
+2114053879
+flush_all
+decr 0x0 622347372
+stats
+delete 0xa1
+flush_all
+flush_all
+replace 0xa1 0 0 10
+2059221703
+prepend 0xa2 0 0 9
+408955626
+stats
+prepend 0xa1 0 0 10
+1402274986
+get 0xe4
+incr 0xa1 224857112
+set 0xa2 0 0 10
+1143638630
+decr 0xa1 1177452913
+	delete 0xa2
+incr 0xa1 869885010
+append 0xa1 0 0 10
+1431043834
+delete 0xa10
+flush_all
+prepend 0xa1 0 0 9
+326781052
+set 0xa1 0 0 9
+206662908
+append 0xa1 0 0 10
+2077887756
+stats
+stats
+append 0xa1 0 0 9
+463005546
+set 0xa1 0 0 9
+581389657
+replace 0xa2 0 0 10
+1381747638
+stats
+set 0x0 0 0 10
+2094674799
+flush_all
+flush_all
+add 0xa1 0 0 10
+1094150513
+decr 0x0 1976618691
+append 0xa1 0 0 10
+1036292498
+stats
+add 0xa1 0 0 9
+487117840
+incr 0xa1 1650072509
+prepend 0xe4 0 0 10
+1433641910
+	append 0xa1 0 0 9
+644214684
+add 0xa1 0 0 10
+1981789563
+delete 0xa1
+append 0xa 0 0 9
+879619614
+add 0xa1 0 0 10
+1174052655
+decr 0xa2 1357063341
+set 0xa1 0 0 10
+2036809880
+incr 0xa1 134833608
+delete 0xa1
+decr 0xa 266686764
+delete 0xa1
+set 0xa1 0 0 10
+1229683483
+stats
+stats
+delete 0xa1
+delete 0xa1
+prepend 0xa1 0 0 9
+392399074
+append 0x0 0 0 10
+1619508146
+replace 0xa 0 0 9
+894247997
+decr 0xe4 1348317870
+set 0xa1 0 0 9
+298114470
+decr 0xa 977497553
+flush_all
+stats
+stats
+decr 0xe4 130306624
+prepend 0xa 0 0 9
+594871052
+add 0xe4 0 0 9
+627336872
+replace 0xa1 0 0 10
+1988398511
+incr 0xa 1067720204
+add 0xe4 0 0 9
+291319305
+delete 0xa1
+decr 0xa1 238510456
+get 0xa1
+append 0xe4 0 0 9
+991477245
+get 0xa1
+replace 0xa2 0 0 9
+201292517
+prepend 0xa1 0 0 10
+2026324779
+incr 0xa1 1780379133
+	

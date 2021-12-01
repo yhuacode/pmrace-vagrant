@@ -1,2 +1,7 @@
 .vagrant/
-download/
+download/*
+!download/README.md
+seeds/bak/output_without_membak_and_with_afl/out_memcached/cov/
+seeds/bak/output_without_membak_and_with_pmrace/out_memcached/cov/
+seeds/bak/output_without_membak_and_with_afl/out_memcached-100/cov/
+seeds/bak/output_without_membak_and_with_pmrace/out_memcached-100/cov/

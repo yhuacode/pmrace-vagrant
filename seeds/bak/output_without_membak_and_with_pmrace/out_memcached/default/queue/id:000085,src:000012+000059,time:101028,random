@@ -1,0 +1,25 @@
+incr 0xa1 1950680816
+	replace 0xa1 0 0 10
+1102271491
+incr 0xa1 1715031084
+decr 0xa1 1611709612
+stats
+	stats
+prepend 0xa1 0 0 10
+1819701743
+prepend 0xa1 0 0 9
+592620783
+get 0xa1
+add 0xa1 0 0 9
+469337248
+delete 0xa1
+	incr 0xa1 271294510
+flush_all
+decr 0xe4 1256424745
+get 0xe4
+delete 0xa
+set 0xa1 0 0 9
+437092419
+decr 0xe4 1644559354
+incr 0xa1 487430927
+	

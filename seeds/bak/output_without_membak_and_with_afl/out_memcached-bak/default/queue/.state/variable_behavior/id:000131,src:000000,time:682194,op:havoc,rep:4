@@ -1,0 +1,25 @@
+stats
+set 0xa1 0 900 5
+0xbeef
+add 0xa1 0 60 5
+0xbeef
+aend 0xa 0 60 15
+p12345678901234
+prepend 0xa1 0 60 15
+012345678901234
+aêpend 0xa1 0 60 15
+012345678901234
+delete 0xa
+delete 0xa1
+set 0xa1 0 100 3
+100
+incr 0xa1 100
+incr 0xe4 100
+decr 0xe4 50
+decr 0xaA 500
+get 0xa
+get 0xa1
+replace 0xa1 0 60 5
+10000
+replace 0xa10 0 60 5
+10000

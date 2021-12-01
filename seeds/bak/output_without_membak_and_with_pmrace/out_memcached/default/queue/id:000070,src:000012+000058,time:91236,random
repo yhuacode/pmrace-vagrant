@@ -1,0 +1,26 @@
+stats
+decr 0xe4 1369618182
+decr 0xa1 1893354204
+delete 0xa10
+	add 0xa1 0 0 9
+661287074
+set 0xa1 0 0 9
+649872743
+flush_all
+decr 0xa 896935456
+decr 0xa1 1629146386
+	replace 0xa1 0 0 10
+1206857338
+prepend 0xa 0 0 10
+1776720903
+get 0xa
+flush_all
+decr 0xa 824796664
+flush_all
+	replace 0x0 0 0 9
+403086686
+decr 0xa 551215045
+prepend 0xa1 0 0 10
+1413535937
+delete 0xa
+	

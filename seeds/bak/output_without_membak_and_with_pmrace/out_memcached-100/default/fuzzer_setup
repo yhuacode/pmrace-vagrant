@@ -1,0 +1,9 @@
+# environment variables:
+AFL_CUSTOM_MUTATOR_LIBRARY=/home/vagrant/pmrace-mutator/memcached-mutator.so
+AFL_CUSTOM_MUTATOR_ONLY=1
+AFL_DISABLE_TRIM=1
+AFL_I_DONT_CARE_ABOUT_MISSING_CRASHES=1
+AFL_KILL_SIGNAL=9
+AFL_SKIP_CPUFREQ=1
+# command line:
+'/home/vagrant/AFLplusplus/afl-fuzz' '-m' '1024' '-i' '/home/vagrant/pmrace-mutator/corpus/memcached' '-o' '/home/vagrant/pmrace-mutator/output/out_memcached' '--' '/home/vagrant/pm-workloads-afl-build/memcached-pmem/memcached' '-A' '-o' 'pslab_force,pslab_file=/home/vagrant/pmrace-mutator/pools/mem_pool'

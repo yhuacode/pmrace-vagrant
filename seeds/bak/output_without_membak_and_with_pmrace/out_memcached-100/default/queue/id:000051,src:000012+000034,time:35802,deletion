@@ -1,0 +1,20 @@
+delete 0xa
+replace 0xa1 0 0 5
+10000
+	get 0xa1
+prepend 0xa 0 0 6
+342391
+set 0xa1 0 0 3
+100
+	append 0xa1 0 0 6
+342391
+incr 0xa1 100
+get 0xa1
+replace 0xa10 0 0 5
+10000
+	stats
+add 0xa2 0 0 5
+48879
+incr 0xe4 100
+get 0xa
+	

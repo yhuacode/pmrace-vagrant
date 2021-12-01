@@ -7,7 +7,7 @@ NC='\033[0m' # No Color
 # set environment variables
 source /home/vagrant/scripts/env.sh
 
-# 1. Build PMRace
+# build PMRace
 echo -e "${GREEN}Build PMRace${NC}"
 git clone https://github.com/yhuacode/pmrace.git /home/vagrant/pmrace/
 cd /home/vagrant/pmrace
@@ -26,9 +26,3 @@ make
 
 # build PMDK
 make pmdk
-
-# 2. Build pm-workloads
-echo -e "${GREEN}Build pm-workloads${NC}"
-git clone https://github.com/yhuacode/pm-workloads.git /home/vagrant/pm-workloads/
-cd /home/vagrant/pm-workloads
-git submodule init && git submodule update --progress

@@ -1,0 +1,3 @@
+afl_cov_pid     : 16489
+afl_cov_version : 0.6.2
+command_line    : /home/vagrant/afl-cov/afl-cov -d /home/vagrant/seeds/bak/output_without_membak_and_with_afl/out_memcached/ --coverage-cmd cat AFL_FILE | LD_LIBRARY_PATH=/home/vagrant/pmdk/install/lib/pmdk_debug /home/vagrant/pm-workloads-afl-build/memcached-pmem/memcached-debug -A -o pslab_force,pslab_file=/home/vagrant/pmrace-mutator/pools/mem_pool --code-dir /home/vagrant/pm-workloads-afl-build/memcached-pmem --overwrite

@@ -1,0 +1,4 @@
+/home/vagrant/pm-workloads-afl-build/memcached-pmem/memcached
+-A
+-o
+pslab_force,pslab_file=/home/vagrant/pmrace-mutator/pools/mem_pool

@@ -1,0 +1,23 @@
+incr 0xa1 1373328001
+delete 0xa1
+stats
+incr 0xa1 178893359
+	flush_all
+stats
+delete 0xe4
+incr 0xa1 578971327
+	set 0xa1 0 0 9
+857650066
+decr 0xa 57167077
+decr 0xa1 1290822756
+stats
+	delete 0xa2
+set 0xa1 0 0 10
+1977855476
+decr 0xa1 1980391933
+flush_all
+append 0xa1 0 0 9
+550082156
+delete 0xa10
+flush_all
+	

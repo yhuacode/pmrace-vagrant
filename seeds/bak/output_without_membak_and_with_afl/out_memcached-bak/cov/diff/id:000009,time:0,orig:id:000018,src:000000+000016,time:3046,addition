@@ -1,0 +1,57 @@
+diff id:000008,time:0,orig:id:000017,src:000000+000001,time:2857,addition -> id:000009,time:0,orig:id:000018,src:000000+000016,time:3046,addition
+Src file: /home/vagrant/pm-workloads-afl-build/memcached-pmem/pslab.c
+  New 'function' coverage: pslab_update_flushtime()
+  New 'line' coverage: 150
+  New 'line' coverage: 151
+  New 'line' coverage: 153
+  New 'line' coverage: 154
+  New 'line' coverage: 155
+  New 'line' coverage: 156
+  New 'line' coverage: 158
+  New 'line' coverage: 159
+  New 'line' coverage: 160
+Src file: /home/vagrant/pm-workloads-afl-build/memcached-pmem/items.c
+  New 'function' coverage: do_item_unlink_nolock()
+  New 'line' coverage: 1197
+  New 'line' coverage: 1198
+  New 'line' coverage: 1199
+  New 'line' coverage: 1200
+  New 'line' coverage: 1202
+  New 'line' coverage: 1205
+  New 'line' coverage: 1206
+  New 'line' coverage: 1207
+  New 'line' coverage: 1210
+  New 'line' coverage: 134
+  New 'line' coverage: 135
+  New 'line' coverage: 136
+  New 'line' coverage: 138
+  New 'line' coverage: 567
+  New 'line' coverage: 569
+  New 'line' coverage: 570
+  New 'line' coverage: 572
+  New 'line' coverage: 575
+  New 'line' coverage: 576
+  New 'line' coverage: 577
+  New 'line' coverage: 578
+  New 'line' coverage: 579
+  New 'line' coverage: 580
+  New 'line' coverage: 581
+  New 'line' coverage: 582
+  New 'line' coverage: 583
+  New 'line' coverage: 584
+Src file: /home/vagrant/pm-workloads-afl-build/memcached-pmem/memcached.c
+  New 'line' coverage: 4721
+  New 'line' coverage: 4723
+  New 'line' coverage: 4724
+  New 'line' coverage: 4725
+  New 'line' coverage: 4727
+  New 'line' coverage: 4733
+  New 'line' coverage: 4747
+  New 'line' coverage: 4750
+  New 'line' coverage: 4753
+  New 'line' coverage: 4754
+  New 'line' coverage: 4755
+  New 'line' coverage: 4756
+  New 'line' coverage: 4761
+  New 'line' coverage: 4763
+  New 'line' coverage: 4764

@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 RED='\033[0;31m'
 GREEN='\033[0;32m'
@@ -33,8 +34,9 @@ fi
 if [ -d $PCLHT_WORK_DIR/$OUTPUT_FOLDER ]
 then
     cd $PCLHT_WORK_DIR
-    echo -e "${GREEN}Entering $(pwd) ${NC}"
+    echo -e "Entering $(pwd)"
     PCLHT_BUGS=$(python3 $PYTHON_SCRIPT_PATH $OUTPUT_FOLDER $REPORT_FOLDER | tail -n 1)
+    echo -e "${GREEN}Reports stored in $(pwd)/$REPORT_FOLDER ${NC}"
 else
     echo -e "${RED}$PCLHT_WORK_DIR/$OUTPUT_FOLDER does not exist!${NC}"
     echo -e "${RED}Bug detection for P-CLHT is required before counting!${NC}"
@@ -44,8 +46,9 @@ fi
 if [ -d $CLEVEL_WORK_DIR/$OUTPUT_FOLDER ]
 then
     cd $CLEVEL_WORK_DIR
-    echo -e "${GREEN}Entering $(pwd) ${NC}"
+    echo -e "Entering $(pwd)"
     CLEVEL_BUGS=$(python3 $PYTHON_SCRIPT_PATH $OUTPUT_FOLDER $REPORT_FOLDER | tail -n 1)
+    echo -e "${GREEN}Reports stored in $(pwd)/$REPORT_FOLDER ${NC}"
 else
     echo -e "${RED}$CLEVEL_WORK_DIR/$OUTPUT_FOLDER does not exist!${NC}"
     echo -e "${RED}Bug detection for Clevel Hashing is required before counting!${NC}"
@@ -55,8 +58,9 @@ fi
 if [ -d $CCEH_WORK_DIR/$OUTPUT_FOLDER ]
 then
     cd $CCEH_WORK_DIR
-    echo -e "${GREEN}Entering $(pwd) ${NC}"
+    echo -e "Entering $(pwd)"
     CCEH_BUGS=$(python3 $PYTHON_SCRIPT_PATH $OUTPUT_FOLDER $REPORT_FOLDER | tail -n 1)
+    echo -e "${GREEN}Reports stored in $(pwd)/$REPORT_FOLDER ${NC}"
 else
     echo -e "${RED}$CCEH_WORK_DIR/$OUTPUT_FOLDER does not exist!${NC}"
     echo -e "${RED}Bug detection for CCEH is required before counting!${NC}"
@@ -66,8 +70,9 @@ fi
 if [ -d $FF_WORK_DIR/$OUTPUT_FOLDER ]
 then
     cd $FF_WORK_DIR
-    echo -e "${GREEN}Entering $(pwd) ${NC}"
+    echo -e "Entering $(pwd)"
     FF_BUGS=$(python3 $PYTHON_SCRIPT_PATH $OUTPUT_FOLDER $REPORT_FOLDER | tail -n 1)
+    echo -e "${GREEN}Reports stored in $(pwd)/$REPORT_FOLDER ${NC}"
 else
     echo -e "${RED}$FF_WORK_DIR/$OUTPUT_FOLDER does not exist!${NC}"
     echo -e "${RED}Bug detection for FAST-FAIR is required before counting!${NC}"
@@ -77,8 +82,9 @@ fi
 if [ -d $MEMCACHED_WORK_DIR/$OUTPUT_FOLDER ]
 then
     cd $MEMCACHED_WORK_DIR
-    echo -e "${GREEN}Entering $(pwd) ${NC}"
+    echo -e "Entering $(pwd)"
     MEMCACHED_BUGS=$(python3 $PYTHON_SCRIPT_PATH $OUTPUT_FOLDER $REPORT_FOLDER | tail -n 1)
+    echo -e "${GREEN}Reports stored in $(pwd)/$REPORT_FOLDER ${NC}"
 else
     echo -e "${RED}$MEMCACHED_WORK_DIR/$OUTPUT_FOLDER does not exist!${NC}"
     echo -e "${RED}Bug detection for memcached-pmem is required before counting!${NC}"

@@ -1,0 +1,12 @@
+replace 0xa1 0 0 5
+10000
+	prepend 0xa 0 0 6
+342391
+	set 0xa1 0 0 5
+48879
+append 0xa1 0 0 6
+342391
+incr 0xa1 100
+get 0xa1
+	stats
+	
