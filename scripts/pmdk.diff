@@ -1,0 +1,16 @@
+diff --git a/src/Makefile b/src/Makefile
+index 8923a265a..3fb02a2b7 100644
+--- a/src/Makefile
++++ b/src/Makefile
+@@ -8,9 +8,9 @@ TOP := $(dir $(lastword $(MAKEFILE_LIST)))..
+ include $(TOP)/src/common.inc
+ 
+ # core targets
+-TARGETS = libpmem libpmemblk libpmemlog libpmemobj libpmempool tools
++TARGETS = libpmem libpmemobj
+ # make all targets
+-ALL_TARGETS = $(TARGETS) common core librpmem libpmem2
++ALL_TARGETS = $(TARGETS) common core
+ # all available targets
+ POSSIBLE_TARGETS = $(TARGETS) common core librpmem rpmem_common test\
+ 	examples benchmarks libpmem2
