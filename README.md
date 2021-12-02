@@ -27,19 +27,26 @@ Install required dependencies.
 
 1. Install the [prerequisites](#software-dependencies)
 
-2. Init the VM (~1 hour)
+2. Clone the project in host machine
 
 ```sh
+    $ git clone https://github.com/yhuacode/pmrace-vagrant.git
+```
+
+3. Init the VM (~1 hour)
+
+```sh
+    $ cd pmrace-vagrant
     $ vagrant up
 ```
 
-3. Login the VM via ssh
+4. Login the VM via ssh
 
 ```sh
     $ vagrant ssh
 ```
 
-4. Build PMRace in the VM (~15 minutes)
+5. Build PMRace in the VM (~15 minutes)
 
 ```sh
     vagrant@PMRace-AE:~$ ./scripts/build_pmrace.sh
