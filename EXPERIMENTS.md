@@ -57,14 +57,40 @@ The `WORKLOAD` should be one of `pclht`, `clevel`, `cceh`, `fast_fair`, and `mem
 
 Note that one of the non-PM concurrency bug (classified as "other bugs" in the paper), i.e., the missing of unlock in `clht_update()`, is not the target of this experiment and is not reproduced. In fact, the bug about unlock missing is easy to manifest in testing. However, in order to get rid of unnecessary hang due to the missing of unlock and facilitate evaluation, we have already fixed the bug in the patch. As a result, the number of "other bugs" for P-CLHT in this experiment is 1 instead of 2.
 
-It is possible to observe different numbers of bugs for some workloads (e.g., FAST-FAIR, memcached-pmem), since only a sample of seeds are tested for limited time (a half hour for 5 programs in total). Moreover, the thread interleaving is nondeterministic. Trying more times or using more seeds (e.g., `~/seeds/full`) is helpful to find more bugs.
+It is possible to observe different numbers of bugs for some workloads (e.g., FAST-FAIR, memcached-pmem), since only a sample of seeds are tested for limited time (45 minutes for 5 programs in total). Moreover, the thread interleaving is nondeterministic. Trying more times or using more seeds (e.g., `~/seeds/full`) is helpful to find more bugs.
 
-Instead of running the bug detection for all PM program again, please leverage the script `~/scripts/debug_workload.sh` to debug a single PM program. An example to test memcached-pmem using the full size of seeds and check the results is as follows
+Specifically, instead of running the bug detection for all PM program again, there are two ways to debug a single PM program.
+
+**Option 1** (recommended due to the convenience): Edit `~/scripts/debug_all_workloads.sh` and comment out the workloads to be skipped in next tests. For example, the following edited version of `~/scripts/debug_all_workloads.sh` will only test memcached-pmem using the default sampled seeds for 20 minutes.
+
+```sh
+#!/bin/bash
+
+SCRIPT_PATH=/home/vagrant/scripts/debug_workload.sh
+
+# timeout 5m $SCRIPT_PATH pclht sample
+# timeout 5m $SCRIPT_PATH clevel sample
+# timeout 5m $SCRIPT_PATH cceh sample
+# timeout 10m $SCRIPT_PATH fast_fair sample
+timeout 20m $SCRIPT_PATH memcached sample
+```
+
+Re-run the experiment and check the results
+
+```sh
+    vagrant@PMRace-AE:~$ ./scripts/debug_all_workloads.sh
+    vagrant@PMRace-AE:~$ ./scripts/exp1_count_found_bugs.sh
+```
+
+**Option 2**: Leverage the script `~/scripts/debug_workload.sh` to debug a single PM program. An example to test memcached-pmem using the **full** size of seeds and check the results is as follows
+
 
 ```sh
     vagrant@PMRace-AE:~$ ./scripts/debug_workload.sh memcached full
     vagrant@PMRace-AE:~$ ./scripts/exp1_count_found_bugs.sh
 ```
+
+Note that there is no time limit in `./scripts/debug_workload.sh`. Hence, you may need to manually stop the execution of `~/scripts/debug_workload.sh` by `CTRL+C`.
 
 ### Experiment-2: PM Concurrency Bug Statistics
 
