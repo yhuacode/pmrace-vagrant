@@ -62,7 +62,7 @@ python3 $PYTHON_SCRIPT_PATH output-random output-pmrace $RESULT_FOLDER/pclht.png
 # # fuzzing memcached using Delay Inj
 
 # # kill zombie processes of memcached
-# killall -9 memcached 2>/dev/null
+# killall -9 memcached 2>/dev/null || true
 
 # cd $MEMCACHED_WORK_DIR
 # $PMRACE_DIR/scripts/clear.sh                   # clear the results of previous tests
@@ -71,7 +71,7 @@ python3 $PYTHON_SCRIPT_PATH output-random output-pmrace $RESULT_FOLDER/pclht.png
 # mv output output-random
 
 # # kill zombie processes of memcached
-# killall -9 memcached 2>/dev/null
+# killall -9 memcached 2>/dev/null || true
 
 # # fuzzing memcached using PMRace's strategy
 # $PMRACE_DIR/scripts/clear.sh                   # clear the results of previous tests
@@ -80,7 +80,7 @@ python3 $PYTHON_SCRIPT_PATH output-random output-pmrace $RESULT_FOLDER/pclht.png
 # mv output output-pmrace
 
 # # kill zombie processes of memcached
-# killall -9 memcached 2>/dev/null
+# killall -9 memcached 2>/dev/null || true
 
 # # plot the figure of memcached-pmem
 # python3 $PYTHON_SCRIPT_PATH output-random output-pmrace $RESULT_FOLDER/memcached.png $RESULT_FOLDER/memcached.csv

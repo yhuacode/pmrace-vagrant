@@ -45,14 +45,14 @@ then
     # memcached-pmem
 
     # kill zombie processes of memcached
-    killall -9 memcached 2>/dev/null
+    killall -9 memcached 2>/dev/null || true
 
     cd $PM_WORKLOADS_DIR/memcached-pmem
     $PMRACE_DIR/scripts/clear.sh                   # clear the results of previous tests
     python3 $PMRACE_DIR/scripts/fuzz.py -e memcached -d ./ -p $PMRACE_DIR/deps/pmdk -s $SEED_DIR/memcached
 
     # kill zombie processes of memcached
-    killall -9 memcached 2>/dev/null
+    killall -9 memcached 2>/dev/null || true
 elif [ "$1" == "cceh" ]
 then
     # CCEH

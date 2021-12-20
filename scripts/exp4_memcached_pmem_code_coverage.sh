@@ -55,19 +55,19 @@ make ENABLE_PMRACE=0 -j
 cd /home/vagrant/pmrace-mutator
 
 # kill zombie processes of memcached
-killall -9 memcached 2>/dev/null
+killall -9 memcached 2>/dev/null || true
 
 echo -e "${GREEN}Testing AFL's seeds${NC}"
 /home/vagrant/afl-cov/afl-cov -d $AFL_SEED_DIR --coverage-cmd "cat AFL_FILE | LD_LIBRARY_PATH=/home/vagrant/pmdk/install/lib/pmdk_debug /home/vagrant/pm-workloads-afl-build/memcached-pmem/memcached-debug -A -o pslab_force,pslab_file=/home/vagrant/pmrace-mutator/pools/mem_pool" --code-dir /home/vagrant/pm-workloads-afl-build/memcached-pmem --overwrite
 
 # kill zombie processes of memcached
-killall -9 memcached 2>/dev/null
+killall -9 memcached 2>/dev/null || true
 
 echo -e "${GREEN}Testing PMRace's seeds${NC}"
 /home/vagrant/afl-cov/afl-cov -d $PMRACE_SEED_DIR --coverage-cmd "cat AFL_FILE | LD_LIBRARY_PATH=/home/vagrant/pmdk/install/lib/pmdk_debug /home/vagrant/pm-workloads-afl-build/memcached-pmem/memcached-debug -A -o pslab_force,pslab_file=/home/vagrant/pmrace-mutator/pools/mem_pool" --code-dir /home/vagrant/pm-workloads-afl-build/memcached-pmem --overwrite
 
 # kill zombie processes of memcached
-killall -9 memcached 2>/dev/null
+killall -9 memcached 2>/dev/null || true
 
 echo -e "${GREEN}AFL's coverage results are presented in $AFL_SEED_DIR/cov/web/memcached-pmem/memcached.c.gcov.html${NC}"
 echo -e "${GREEN}PMRace's coverage results are presented in $PMRACE_SEED_DIR/cov/web/memcached-pmem/memcached.c.gcov.html${NC}"
