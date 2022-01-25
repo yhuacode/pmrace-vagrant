@@ -1,10 +1,10 @@
 ## Description
 
-The following instructions assume that experiments (and all commands) are run in the started VM. Please refer to previous [documentation](./README.md) for the VM construction.
+The following instructions assume that experiments (and all commands) are run in the started VM. Please refer to previous [documentation](./README.md) for the VM construction and the building of PMRace.
 
 ## Things Need to Know Before Evaluation
 
-- Different experiments should not be run simultaneously. Otherwise, unexpected errors may occur. For instance, running experiments 2 and 3 simultaneously in two ssh sessions may cause unexpected errors due to the requirement for different `libPMRaceHook.so`. A recommended way for the artifact evaluation is to run these experiments one by one in order. If a failure occurs and causes an unexpected crash, please first re-run corresponding experiment. If the failure still exists, please contact us.
+- Different experiments should not be run simultaneously. Otherwise, unexpected errors may occur. For instance, running experiments 2 and 3 simultaneously in two ssh sessions may cause unexpected errors due to the requirement for different `libPMRaceHook.so`. A recommended way for the artifact evaluation is to run these experiments one by one in order. If a failure occurs and causes an unexpected crash, please first re-run corresponding experiment. If the failure still exists, please raise an issue or contact us.
 
 - Due to the hardware limits of VM, experiments 1 and 2 use a small scale of seeds by default. The number of concurrent worker processes for fuzzing is limited to 4 (the paper's results used 13 worker processes by default). Hence, the performance results and number of inconsistencies may be different.
 
@@ -55,7 +55,7 @@ This optional workflow is used to redo the bug detection for a specific PM progr
 The `WORKLOAD` should be one of `pclht`, `clevel`, `cceh`, `fast_fair`, and `memcached`. The optional `SCALE` should be `sample` (the default value for a small seed scale) or `full`. Check found bugs using the command `./scripts/exp1_count_found_bugs.sh`
 
 
-**Expected Results**: The end of the output is the statistics of unique bugs found by PMRace (Table 1). A unique bug represents a group of bugs reading non-persisted data, which are written by the same store instruction (i.e., multiple reader instructions but one writer instruction). The summarized bug reports are in corresponding report folders (please refer to the outputs of `./scripts/exp1_count_found_bugs.sh`) for tested PM workloads.
+**Expected Results**: The end of the output is the statistics of unique bugs found by PMRace (Table 5 in the paper, which is summarized from Table 2). A unique bug represents a group of bugs reading non-persisted data, which are written by the same store instruction (i.e., multiple reader instructions but one writer instruction). The summarized bug reports are in corresponding report folders (please refer to the outputs of `./scripts/exp1_count_found_bugs.sh`) for tested PM workloads.
 
 Note that one of the non-PM concurrency bug (classified as "other bugs" in the paper), i.e., the missing of unlock in `clht_update()`, is not the target of this experiment and is not reproduced. In fact, the bug about unlock missing is easy to manifest in testing. However, in order to get rid of unnecessary hang due to the missing of unlock and facilitate evaluation, we have already fixed the bug in the patch. As a result, the number of "other bugs" for P-CLHT in this experiment is 1 instead of 2.
 
@@ -118,7 +118,7 @@ Similar to the workflow of bug detection for a single program, it is possible to
     vagrant@PMRace-AE:~$ ./scripts/validate_bugs_in_workload.sh WORKLOAD
 ```
 
-**Expected Results**: The output of `./scripts/exp2_get_con_bug_statistics.sh` is the PM concurrency bug statistics, which is similar to Table 2 in the paper. Due to the limited seed scale and fuzzing time in the first experiment, the numbers may be relatively small, especially for FAST-FAIR and memcached-pmem. For example, for the statistics about memcached-pmem (an in-memory key-value store), it took us about two days using 13 worker processes for fuzzing. In the artifact evaluation, the first experiment leverages 4 worker processes. Note that each work process debugs a PM concurrent program, which spawns at least 4 threads. Hence, 4 worker processes almost consume all CPU resources of the VM.
+**Expected Results**: The output of `./scripts/exp2_get_con_bug_statistics.sh` is the PM concurrency bug statistics, which is similar to Table 6 (a summarized table of Table 3) in the paper. Due to the limited seed scale and fuzzing time in the first experiment, the numbers may be relatively small, especially for FAST-FAIR and memcached-pmem. For example, for the statistics about memcached-pmem (an in-memory key-value store), it took us about two days using 13 worker processes for fuzzing. In the artifact evaluation, the first experiment leverages 4 worker processes. Note that each work process debugs a PM concurrent program, which spawns at least 4 threads. Hence, 4 worker processes almost consume all CPU resources of the VM.
 
 ### Experiment-3: The Time to Detect PM Inter-thread Inconsistency
 
@@ -128,7 +128,7 @@ Run the bug detection for P-CLHT with different interleaving exploration strateg
     vagrant@PMRace-AE:~$ ./scripts/exp3_runtime_inconsistency_graph.sh
 ```
 
-**Expected Results**: This command will generate a graph about the time to find PM inter-thread inconsistencies in P-CLHT (Figure 7a), which will be placed in `/home/vagrant/download/results` on the VM (i.e., the `download` folder in `pmrace-vagrant` on the host machine).
+**Expected Results**: This command will generate a graph about the time to find PM inter-thread inconsistencies in P-CLHT (Figure 8a), which will be placed in `/home/vagrant/download/results` on the VM (i.e., the `download` folder in `pmrace-vagrant` on the host machine).
 
 Reproducing the performance results of the bug detection on FAST-FAIR and memcached-pmem requires more CPU resources (verified using 104 threads) to simultaneously test more seeds and more fuzzing time to find inconsistencies (6 hours for FAST-FAIR, 30 hours for memcached-pmem). Given appropriate hardware resources, users can edit `~/scripts/exp3_runtime_inconsistency_graph.sh` to enable the performance evaluation of bug detection on FAST-FAIR and memcached-pmem.
 
@@ -140,7 +140,7 @@ Evaluate the code coverage of memcached-pmem using default seeds (~20 minutes)
     vagrant@PMRace-AE:~$ ./scripts/exp4_memcached_pmem_code_coverage.sh
 ```
 
-**Expected Results**: The end of output is the locations of web pages for the code coverage of memcached-pmem. For the detailed numbers about the coverage of memcached commands (Table 3), please refer to the lcov report page for "memcached.c" and check the line data (hit times) for the following lines.
+**Expected Results**: The end of output is the locations of web pages for the code coverage of memcached-pmem. For the detailed numbers about the coverage of memcached commands (Table 4), please refer to the lcov report page for "memcached.c" and check the line data (hit times) for the following lines.
 
 #Line | Commands or Cases
 ------|------------------
@@ -165,4 +165,4 @@ Run the following command to evaluate the impact of in-memory checkpoints (~7 ho
     vagrant@PMRace-AE:~$ ./scripts/exp5_fuzzing_speed.sh
 ```
 
-**Expected Results**: The evaluation results corresponding to Figure 8 are presented in the console output. The output folders are `~/pmrace-mutator/output_with*`. For AFL++, the path of seeds in an output folder is `out_*/default/queue`. The corresponding path for seeds generated by PMRace's mutator is `out_*/default/seeds`.
+**Expected Results**: The evaluation results corresponding to Figure 10 are presented in the console output. The output folders are `~/pmrace-mutator/output_with*`. For AFL++, the path of seeds in an output folder is `out_*/default/queue`. The corresponding path for seeds generated by PMRace's mutator is `out_*/default/seeds`.
