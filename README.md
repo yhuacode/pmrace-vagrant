@@ -1,6 +1,23 @@
 ## Description
 
-This is a vagrant project to configure a VM for the artifact evaluation of PMRace.
+This is a vagrant project to configure a VM for the artifact evaluation of [PMRace](https://github.com/yhuacode/pmrace).
+
+## Folder Structure
+
+```
+pmrace-vagrant/
+├── download/
+├── scripts/
+│   └── ...
+└── seeds/
+    ├── corpus
+    ├── full
+    └── sample
+```
+
+- `download`: A synced-folder for sharing files between the VM and the host machine
+- `scripts`: Scripts to build the artifact and run experiments
+- `seeds`: `sample` (small scale) and `full` (large scale) are pre-generated seeds for previous 4 experiments. `corpus` are the initial seeds for the input generation in experiment 5.
 
 ## Prerequisites
 
@@ -53,3 +70,9 @@ Install required dependencies.
 ```
 
 To run experiments, please refer to the detailed instructions in [EXPERIMENTS](./EXPERIMENTS.md).
+
+## Contact
+
+If you have any problems, please report in the issue page or contact me.
+
+- Zhangyu Chen (chenzy@hust.edu.cn)
